@@ -1,0 +1,25 @@
+
+{
+  "Fútbol": [
+    "Liga MX",
+    "Premier League",
+    "LaLiga",
+    "Serie A",
+    "Bundesliga",
+    "Ligue 1",
+    "UEFA Champions League",
+    "UEFA Europa League",
+    "UEFA Conference League",
+    "Copa del Rey",
+    "FA Cup",
+    "Coppa Italia",
+    "DFB-Pokal",
+    "Coupe de France",
+    "CONCACAF Champions Cup"
+  ],
+  "Fútbol Americano": ["NFL"],
+  "F1": ["FIA Formula One World Championship"],
+  "Basket Ball": ["NBA"],
+  "Base Ball": ["MLB"],
+  "Combates": ["UFC","AMB","CMB","FIB","OMB"]
+}

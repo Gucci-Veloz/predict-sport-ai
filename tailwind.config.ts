@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -16,6 +17,10 @@ export default {
 			screens: {
 				'2xl': '1400px'
 			}
+		},
+		screens: {
+			md: '768px',
+			lg: '1280px'
 		},
 		extend: {
 			colors: {
@@ -63,6 +68,20 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				'mono-title': ['Fira Mono', 'monospace'],
+				'mono-body': ['Roboto Mono', 'monospace']
+			},
+			fontSize: {
+				'h1': '2rem',
+				'h2': '1.6rem', 
+				'h3': '1.28rem',
+				'base': '1rem',
+				'label': '0.8rem'
+			},
+			lineHeight: {
+				'base': '1.5'
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -84,11 +103,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'slot-spin': {
+					'0%': { transform: 'rotateY(0deg)' },
+					'100%': { transform: 'rotateY(360deg)' }
+				},
+				'glow-pulse': {
+					'0%, 100%': { boxShadow: '0 0 5px #FF6B35, 0 0 10px #FF6B35, 0 0 15px #FF6B35' },
+					'50%': { boxShadow: '0 0 10px #FF6B35, 0 0 20px #FF6B35, 0 0 30px #FF6B35' }
+				},
+				'fade-in-up': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'slot-spin': 'slot-spin 1.2s ease-in-out',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.6s ease-out'
 			}
 		}
 	},
